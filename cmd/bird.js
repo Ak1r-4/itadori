@@ -10,6 +10,7 @@ const fetch = require('node-fetch');
       const img = (await res.json())[0];
       const embed = new MessageEmbed()
         .setTitle('🐦  Chirp!  🐦')
+        .setURL(img)
         .setImage(img)
         .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
         .setTimestamp()
