@@ -50,4 +50,3 @@ let Text = args.join(" ");
       
         return message.channel.send(Embed);
     }
-}
