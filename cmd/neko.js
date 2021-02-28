@@ -1,32 +1,22 @@
 const Discord = require("discord.js");
-const config = require('../config.json');
-module.exports.run = (client, message, args) => {
+const config = require('../config.json')
+const emotes = require('../emotes.json')
+const superagent = require('superagent');
 
-    var superagent = require('superagent');
-
-    if (!message.channel.nsfw)  {
-    var embed = new Discord.MessageEmbed()
-    .setAuthor(' NSFW not allowed here!')
-    .setDescription('Use NSFW commands in a NSFW marked channel (look in channel settings, dummy)')
-    .setImage('https://i.imgur.com/oe4iK5i.gif') 
-    .setColor(config.embedcolor);
-    return message.channel.send(embed)
-    }
-    var lo = new Discord.MessageEmbed()
-                .setDescription(`Please wait...`)
-                .setTimestamp()
-
-    message.channel.send(lo).then(m => {
-
-        superagent.get('https://nekobot.xyz/api/image').query({ type: 'neko'}).end((err, response) => {
-
-            var embed_nsfw = new Discord.MessageEmbed()
-                .setDescription(`:underage:\n**[Image not loading? Click here](${response.body.message})**`)
-                .setTimestamp()
-                .setImage(response.body.message)
-                .setColor(config.embedcolor);
-            
-            m.edit(embed_nsfw);
-        });
-    });
+module.exports.run = async (client, message, args) => {
+  
+        superagent.get('https://shiro.gg/api/images/neko')
+        .end((err, response) => {
+      const embed = new Discord.MessageEmbed()
+      .setTitle("Here's your Neko")
+      .setImage(response.body.url)
+      .setColor(config.embedcolor)
+      .setTimestamp()
+      .setFooter(`© Kakashi `, "https://cdn.discordapp.com/avatars/807734261901820004/03d30e04f9c3e1ecb7a865d3cb7c859c.png?size=1024")
+      .setURL(response.body.url);
+  message.channel.send(embed);
+    }).catch((err) => message.channel.send({embed: {
+                color: 16734039,
+                title: "Something went wrong... :cry:"
+            }}));
 }
