@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const config = require('../config.json')
 const emotes = require('../emotes.json')
 
-module.exports.run = (client, message, args) => {  
+module.exports.run = async (client, message, args) => {  
 
 let Text = args.join(" ");
 
