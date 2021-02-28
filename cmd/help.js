@@ -7,7 +7,7 @@ module.exports.run = (client, message, args) => {
     .setAuthor('Help :')
     .setDescription(`Prefix : ${config.prefix}\n \`This bot is in the beta version
 We are still adding new commands\`\n\n list of commands :`)
-    .addField('**Utility**  🌏 :', '`avatar`, `serverinfo`, `neko`, `hug`, ', true)
+    .addField('**Utility**  🌏 :', '`avatar`, `serverinfo`, `neko`, `hug`, `pat`, `waifu`', true)
     .addField(`**NSFW**  ${emotes.nsfw} :`, '`4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `pussy`', true)
     .addField(`**Image**  ${emotes.image} :`, '`affect`, `rip`, `delete`, `beautiful`, `thomas`', true)
     .addField(`**Fun**  ${emotes.fun} :`, '`binary`, `clyde`, `comment`, `eject`, `emojify`, `github`, `iq`, `npm`, `osu`, `reddit`, `weather`, `zalog`, `meme`, `8ball`', true)
