@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const config = require('../config.json')
 const emotes = require('../emotes.json')
+const Scraper = require('mal-scraper')
 
 module.exports.run = async (client, message, args) => {  
 
