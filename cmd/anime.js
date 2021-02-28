@@ -10,7 +10,7 @@ let Text = args.join(" ");
       
         if (Text.length > 200) return message.channel.send(`Text Limit - 200`);
       
-        let Msg = await message.channel.send(`**Searching It For You ${emojis.load}**`);
+        let Msg = await message.channel.send(`**Searching It For You ${emotes.load}**`);
       
         let Replaced = Text.replace(/ /g, " ");
       
