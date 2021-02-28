@@ -9,6 +9,7 @@ module.exports.run = (client, message, args) => {
     .setAuthor(' NSFW not allowed here!')
     .setDescription('Use NSFW commands in a NSFW marked channel (look in channel settings, dummy)')
     .setImage('https://i.imgur.com/oe4iK5i.gif') 
+    .setColor(config.embedcolor); 
     return message.channel.send(embed)
     }
 
