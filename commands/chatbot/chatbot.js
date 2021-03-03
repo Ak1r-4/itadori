@@ -6,7 +6,7 @@ const db = new Database(config.database)
 
 module.exports = {
     config: {
-        name: '',
+        name: 'chatbot',
         description: '',
         aliases: [""],
         usage: `${config.prefix}`,
