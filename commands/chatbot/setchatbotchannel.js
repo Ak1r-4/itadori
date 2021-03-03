@@ -23,7 +23,7 @@ if (!args[0]) {
   let channelName = message.guild.channels.cache.get(b);
   if (message.guild.channels.cache.has(b)) {
     return message.channel.send(
-      `**${emote.verified} ChatBot Channel Set In This Server Is \`${channelName.name}\`!**`
+      `**${emote.success} ChatBot Channel Set In This Server Is \`${channelName.name}\`!**`
     );
   } else
     return message.channel.send({embed: {
@@ -52,7 +52,7 @@ if (!args[0]) {
 
            message.channel.send({embed: {
             color: config.embedcolor,
-            title: `${emote.verified} ChatBot Channel has been Set Successfully \`${channel.id}\``
+            title: `${emote.success} ChatBot Channel has been Set Successfully \`${channel.id}\``
         }})
         }
     } catch {
