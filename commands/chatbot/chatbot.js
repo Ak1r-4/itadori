@@ -33,19 +33,19 @@ module.exports = {
       )
      .addField(
         "Support Link: ",
-        `**[Click Here!](https://discord.gg/NtyaM9d)**`,
+        `**[Click Here!](https://discord.gg/NQtZNcbVBc)**`,
         true
       )
       .addField(
         "Vote Link:",
-        `**[Click Here!](https://top.gg/bot/636484020301201418/vote)**`,
+        `**Soon!**`,
         true
       )
       .setTimestamp()
-      .setFooter(
-        "© Karma",
-        "https://cdn.discordapp.com/attachments/725019921159028808/739770316754256012/Screenshot_20200803-1459592.png"
-      )
+  .setFooter(
+      "© Kakashi",
+      "https://cdn.discordapp.com/avatars/807734261901820004/03d30e04f9c3e1ecb7a865d3cb7c859c.webp?size=1024"
+    )
       .setColor(config.embedcolor);
     
      let channel1 = await db.fetch(`chatbot_${message.guild.id}`);
@@ -70,19 +70,19 @@ module.exports = {
                      )
      .addField(
         "Support Link: ",
-        `**[Click Here!](https://discord.gg/NtyaM9d)**`,
+        `**[Click Here!](https://discord.gg/NQtZNcbVBc)**`,
         true
       )
       .addField(
         "Vote Link:",
-        `**[Click Here!](https://top.gg/bot/636484020301201418/vote)**`,
+        `**Soon!**`,
         true
       )
       .setTimestamp()
-      .setFooter(
-        "© Karma",
-        "https://cdn.discordapp.com/attachments/725019921159028808/739770316754256012/Screenshot_20200803-1459592.png"
-      )
+.setFooter(
+      "© Kakashi",
+      "https://cdn.discordapp.com/avatars/807734261901820004/03d30e04f9c3e1ecb7a865d3cb7c859c.webp?size=1024"
+    )
       .setColor(config.embedcolor);
     message.channel.send(embed);
   }
