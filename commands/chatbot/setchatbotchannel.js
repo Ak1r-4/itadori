@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const config = require('../../configs/config.json');
-const emotes = require('../../configs/emotes.json')
+const emote = require('../../configs/emotes.json')
 const { Database } = require("quickmongo")
 const db = new Database(config.database)
 
