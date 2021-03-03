@@ -44,7 +44,7 @@ db.on("ready", () => {
       client.on('ready', () => { //sasuke
 	function randomStatus() {//sasuke
 		let status = [//sasuke
-			PREFIX + 'help',
+			config.prefix + 'help',
 			`School is Back :(`,
       `anime`
 		];
