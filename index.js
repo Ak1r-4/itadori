@@ -41,7 +41,23 @@ client.on('ready', () => {
 db.on("ready", () => {
     console.log("Database Connected!")
 })
+      client.on('ready', () => { //sasuke
+	function randomStatus() {//sasuke
+		let status = [//sasuke
+			PREFIX + 'help',
+			`School is Back :(`,
+      `anime`
+		];
+		let rstatus = Math.floor(Math.random() * status.length);
 
+		client.user.setActivity(status[rstatus], {
+			type: 'PLAYING', status: "idle" 
+		});
+	}
+	setInterval(randomStatus, 2000);
+
+	console.log(`Hi, ${client.user.username} is now online!`);
+});
 //CHATBOT FEATURE 
 
 client.on("message", async (message) => {
