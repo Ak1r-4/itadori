@@ -47,7 +47,7 @@ if (!args[0]) {
             title: `${emote.info} This Channel is already set as ChatBot Channel!`
         }})
         } else {
-            client.guilds.cache.get(message.guild.id).channels.cache.get(channel.id).send(`**${emote.verified} ChatBot Channel Set!**`)
+            client.guilds.cache.get(message.guild.id).channels.cache.get(channel.id).send(`**${emote.success} ChatBot Channel Set!**`)
             db.set(`chatbot_${message.guild.id}`, channel.id)
 
            message.channel.send({embed: {
