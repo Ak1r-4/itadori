@@ -8,7 +8,7 @@ module.exports = {
     config: {
         name: 'setchatbotchannel',
         description: 'Sets a ChatBot Channel',
-        aliases: ["setchatbotchannel"], 
+        aliases: ["setchatbotchannel", "scb"], 
         usage: '<channel>',
         accessableby: "MANAGE_GUILD",
     },
