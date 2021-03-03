@@ -27,7 +27,7 @@ module.exports = {
     embed.addField(`**NSFW**  ${emotes.nsfw} :`, '`4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `pussy`', true)
     embed.addField(`**Image**  ${emotes.image} :`, '`affect`, `rip`, `delete`, `beautiful`, `thomas`', true)
     embed.addField(`**ChatBot**  ${emotes.chatbot}`, '`chatbot`, `disableChatbotchannel`, `setChatbotchannel`', true)
-    embed.addField(`**Fun**  ${emotes.fun} :`, '`binary`, `clyde`, `comment`, `eject`, `emojify`, `github`, `iq`, `npm`, `osu`, `reddit`, `weather`, `zalog`, `meme`, `8ball`', true)
+    embed.addField(`**Fun**  ${emotes.fun} :`, '`binary`, `clyde`, `comment`, `eject`, `emojify`, `github`, `iq`, `npm`, `osu`, `reddit`, `weather`, `meme`, `8ball`', true)
     embed.addField(`**Anime**  ${emotes.anime} :`, '`anime` [this command for search about animes]', true)
     embed.addField(`**Animals**  ${emotes.animals} :`, '`bird`, `cat`, `dog`, `duck`, `fox`, `shibe`, `dogfact`, `catfact`', true)
     embed.addField(`**info**  ${emotes.info} :`, '`help`, `botinfo`, `invite`, `ping`',true)
