@@ -19,7 +19,7 @@ module.exports = async client => {
 		let rstatus = Math.floor(Math.random() * status.length);
 
 		client.user.setActivity(status[rstatus], {
-			type: 'WATCHING', status: "dnd" 
+			type: 'PLAYING', status: "dnd" 
 		});
 	}
 	setInterval(randomStatus, 2000);
