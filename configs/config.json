@@ -1,7 +1,7 @@
 {
   "embedcolor": "#f5fdff",
-  "prefix": "--",
-  "token": "ODExNjc4MzY2MTc1NzIzNTQw.YC1sYg.A0GbBY2E-Qls9UyDKb8kg9Z7tAU",
+  "prefix": "??",
+  "token": "ODA3NzM0MjYxOTAxODIwMDA0.YB8TJw.b57cZx4B0K99u_qi5oDz9oUDVsQ",
   "red": "#fa2d00",
   "database": "mongodb+srv://sasuke:hossam_2004@cluster0.6ml8r.mongodb.net/kakshi-db?retryWrites=true&w=majority",
   "AME_API": "518e2323e41af7287726bff8fd605780cb0540ed939198786cd463dbe508a536d45d37df802ac1b39767b8f0f697e840b43a5d345c6f97a45209d99a94afb298"     
