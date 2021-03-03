@@ -35,7 +35,7 @@ client.categories = fs.readdirSync('./commands');
 // EVENTS
 
 client.on('ready', () => {
-    console.log('Karma Started!');
+    console.log('Kakashi on!');
 });
 
 db.on("ready", () => {
