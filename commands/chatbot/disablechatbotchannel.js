@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const config = require('../../configs/config.json');
-const emotes = require('../../configs/emotes.json')
+const emote = require('../../configs/emotes.json')
 const { Database } = require("quickmongo")
 const db = new Database(config.database)
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
     
             message.channel.send({embed: {
             color: config.embedcolor,
-            title: `${emote.verified} ChatBot Channel has been Succesfully Disabled! `
+            title: `${emote.success} ChatBot Channel has been Succesfully Disabled! `
         }})
         }
         return;
