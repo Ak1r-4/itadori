@@ -76,7 +76,8 @@ client.on("message", async (message) => {
    
     .then(res => res.json())
         .then(data => {
-            sChannel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
+	    const embed = new Discord.MessageEmbed()
+            embed.setDescription(`${message.content} \n <@${message.author.id}> ${data.message}`);
         });
           sChannel.stopTyping();
               
