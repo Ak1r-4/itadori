@@ -6,10 +6,10 @@ const fetch = require('node-fetch')
 
 module.exports = {
     config: {
-        name: 'weather',
-        description: 'Shows weather information',
-        aliases: ["weather"],
-        usage: '<city name>',
+        name: 'ping',
+        description: 'Shows Bot Ping',
+        aliases: [""],
+        usage: '',
         accessableby: "",
     },
     run: async (client, message, args) => {
