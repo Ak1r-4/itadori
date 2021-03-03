@@ -25,7 +25,7 @@ if (!args[0]) return message.channel.send('Please, provide a valid user\'s nickn
 
 api.getUser({u: username}).then(user => {
 const osu = new Discord.MessageEmbed()
-.setTitle(`<:osu:760439827086311446> User Osu Search System`)
+.setTitle(`<:osu:815037669050155078> User Osu Search System`)
 .setThumbnail(`http://s.ppy.sh/a/${user.id}}`)
 .setColor(config.embedcolor)
 .addField('》`Nickname:`', user.name)
