@@ -74,10 +74,9 @@ client.on("message", async (message) => {
 
     fetch(`https://api.deltaa.me/chatbot?message=${encodeURIComponent(message.content)}&name=${client.user.username}&user=${message.author.username}&gender=Male`)
    
-    .then(res => res.json())
+     .then(res => res.json())
         .then(data => {
-	    const embed = new Discord.MessageEmbed()
-            embed.setDescription(`${message.content} \n <@${message.author.id}> ${data.message}`);
+            sChannel.send(`> ${message.content} \n <@${message.author.id}> ${data.message}`);
         });
           sChannel.stopTyping();
               
