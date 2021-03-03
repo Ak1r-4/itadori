@@ -7,7 +7,7 @@ module.exports = {
     config: {
         name: 'disablechatbotchannel',
         description: 'Disables a ChatBot Channel',
-        aliases: ["disablechatbotchannel"],
+        aliases: ["disablechatbotchannel", "dsc"],
         usage: '<channel>',
         accessableby: "MANAGE_GUILD",
     },
