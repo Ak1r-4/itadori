@@ -1,9 +1,8 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const config = require('../../configs/config.json');
 const emote = require('../../configs/emotes.json')
 const { Database } = require("quickmongo")
 const db = new Database(config.database)
-
 
 module.exports = {
     config: {
@@ -48,7 +47,7 @@ if (!args[0]) {
             title: `${emote.info} This Channel is already set as ChatBot Channel!`
         }})
         } else {
-            client.guilds.cache.get(message.guild.id).channels.cache.get(channel.id).send(`**${emotes.verified} ChatBot Channel Set!**`)
+            client.guilds.cache.get(message.guild.id).channels.cache.get(channel.id).send(`**${emote.verified} ChatBot Channel Set!**`)
             db.set(`chatbot_${message.guild.id}`, channel.id)
 
            message.channel.send({embed: {
@@ -60,5 +59,4 @@ if (!args[0]) {
         return message.channel.send(`**${emote.error} Error - Missing Permissions Or Channel Is Not A Text Channel!**`);
     }
     }
-
 }
