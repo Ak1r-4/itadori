@@ -37,7 +37,7 @@ module.exports = {
 
 
    const question = args.join(' ');
-    if (!question) return this.sendErrorMessage(message, 0, 'Please provide a question to ask');
+    if (!question) return message.channel.send( 'Please provide a question to ask');
     const embed = new MessageEmbed()
       .setTitle('🎱  The Magic 8-Ball  🎱')
       .addField('Question', question)
