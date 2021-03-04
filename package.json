@@ -1,6 +1,6 @@
 {
   "name": "kakashi",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "bot with discord",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "Sayrix",
   "license": "ISC",
   "dependencies": {
-    "amethyste-api": "^1.1.5",
+    "amethyste-api": "^1.1.4",
     "axios": "^0.21.1",
     "canvacord": "^5.1.0",
     "chalk": "^4.1.0",
