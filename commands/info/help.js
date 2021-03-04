@@ -25,7 +25,7 @@ module.exports = {
 
     embed.addField('**General**  🌏 :', '`avatar`, `serverinfo`, `user`, `neko`, `hug`, `pat`, `wink`', true)
     embed.addField(`**NSFW**  ${emotes.nsfw} :`, '`4k`, `anal`, `ass`, `hentai`, `hkitsune`, `hneko`, `holo`, `kemonomimi`, `pussy`', true)
-    embed.addField(`**Image**  ${emotes.image} :`, '`affect`, `rip`, `delete`, `beautiful`, `thomas`', true)
+    embed.addField(`**Image**  ${emotes.image} :`, '`affect`, `rip`, `delete`, `beautiful`, `thomas`, `gay`', true)
     embed.addField(`**ChatBot**  ${emotes.chatbot}`, '`chatbot`, `disableChatbotchannel`, `setChatbotchannel`', true)
     embed.addField(`**Fun**  ${emotes.fun} :`, '`binary`, `clyde`, `comment`, `eject`, `emojify`, `github`, `iq`, `npm`, `osu`, `reddit`, `weather`, `meme`, `8ball`', true)
     embed.addField(`**Anime**  ${emotes.anime} :`, '`anime` [this command for search about animes]', true)
