@@ -37,7 +37,7 @@ module.exports = {
     .setColor(config.embedcolor)
     .setDescription("help to display the commands")
     .addField("❯ kakashi", `v${pkg.version}`)
-    .addField("❯ Site web", "Soon")
+    .addField("❯ Site web", "[here](http://www.itadoribot1.ga/)")
     .addField("❯ Discord.js", `v${version}`)
     .addField("❯ Node.js", `${process.version}`)
     .addField("❯ Platform", `${platform}`)
