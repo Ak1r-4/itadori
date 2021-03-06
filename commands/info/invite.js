@@ -19,7 +19,7 @@ const embed = new Discord.MessageEmbed()
     )
     .addField("**Server Support**", "[Click Here](https://discord.gg/NQtZNcbVBc)", true)
     .addField("**Vote**", "**Soon !**", true)
-    .addField("Web Site ", "**Soon !**", true)
+    .addField("Web Site ", "**[here](http://www.itadoribot1.ga/)**", true)
     .setColor(config.embedcolor);
     message.channel.send(embed)
     
