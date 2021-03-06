@@ -38,10 +38,7 @@ const osu = new Discord.MessageEmbed()
 .addField('》`Playcount:`', user.counts.plays)
 .addField('》`Accuracy:`', `${user.accuracyFormatted}`)
 .setTimestamp()
-    .setFooter(
-      "© Kakashi",
-      "https://cdn.discordapp.com/avatars/807734261901820004/03d30e04f9c3e1ecb7a865d3cb7c859c.webp?size=1024"
-    )
+.setFooter( "© Itadori","https://media.discordapp.net/attachments/815004467979223040/817813789382410270/0e8ea2cf9e9a50a87464380a8d083295.jpg?width=676&height=676")
 console.log(user)
 message.channel.send(osu)
 })
