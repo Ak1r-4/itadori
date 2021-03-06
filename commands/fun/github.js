@@ -23,8 +23,8 @@ module.exports = {
     .setDescription(`:bulb:   ${user}'s  **IQ is:**   \`${iq}\`  `)
     .setColor("FF0000")
     .setThumbnail("https://media.giphy.com/media/l44QzsOLXxcrigdgI/giphy.gif")
-    .setTimestamp()
-    .setFooter('© Karma', 'https://cdn.discordapp.com/attachments/725019921159028808/739770316754256012/Screenshot_20200803-1459592.png')
+    .setTimestamp()  
+    .setFooter( "© Itadori","https://media.discordapp.net/attachments/815004467979223040/817813789382410270/0e8ea2cf9e9a50a87464380a8d083295.jpg?width=676&height=676")
     .setColor(config.embedcolor);
     message.channel.send(embed);
 
