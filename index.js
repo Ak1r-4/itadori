@@ -35,7 +35,7 @@ client.categories = fs.readdirSync('./commands');
 // EVENTS
 
 client.on('ready', () => {
-    console.log('Kakashi on!');
+    console.log('itadori on!');
 });
 
 db.on("ready", () => {
