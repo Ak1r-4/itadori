@@ -31,3 +31,4 @@ module.exports = {
       this.sendErrorMessage(message, 1, 'Please try again in a few seconds', err.message);
     }
   }
+}
