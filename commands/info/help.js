@@ -43,7 +43,7 @@ module.exports = {
                 if (!command) return message.channel.send(embed.setTitle("**Invalid Command!**").setDescription(`**Do \`${prefix}help\` For the List Of the Commands!**`))
                 command = command.config
 
-                embed.setDescription(stripIndents`**Kakashi Prefix Is \`${prefix}\`**\n
+                embed.setDescription(stripIndents`**itadori Prefix Is \`${prefix}\`**\n
                 ** Command -** ${command.name.slice(0, 1).toUpperCase() + command.name.slice(1)}\n
                 ** Description -** ${command.description || "No Description provided."}\n
                 ** Usage -** ${command.usage ? `\`${prefix}${command.name} ${command.usage}\`` : "No Usage"}\n
