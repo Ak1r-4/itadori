@@ -31,7 +31,7 @@ module.exports = {
     embed.addField(`**Anime**  ${emotes.anime} :`, '`anime` [this command for search about animes]', true)
     embed.addField(`**Animals**  ${emotes.animals} :`, '`bird`, `cat`, `dog`, `duck`, `fox`, `shibe`, `dogfact`, `catfact`', true)
     embed.addField(`**info**  ${emotes.info} :`, '`help`, `botinfo`, `invite`, `ping`',true)
-    embed.addField("**Server Support**", "**[Click Here](https://discord.gg/NQtZNcbVBc)**", true)
+    embed.addField("**Server Support**", "**[Click Here](https://discordapp.com/invite/M4CUn7N6Tj)**", true)
     embed.addField("**Vote**", "**Soon !**", true)
     embed.addField("Web Site ", "**[Click Here](http://www.itadoribot1.ga/)**", true)
     embed.setFooter(`for more help type ${prefix}help <commandName>`)
