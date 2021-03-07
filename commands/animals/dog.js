@@ -14,7 +14,7 @@ const fetch = require('node-fetch');
     run: async (client, message, args) => {
     
 
-
+try {
       const res = await fetch('https://dog.ceo/api/breeds/image/random');
       const img = (await res.json()).message;
       const embed = new MessageEmbed()
@@ -29,4 +29,6 @@ const fetch = require('node-fetch');
       message.client.logger.error(err.stack);
       this.sendErrorMessage(message, 1, 'Please try again in a few seconds', err.message);
     }
-  }
+
+    }
+ }
