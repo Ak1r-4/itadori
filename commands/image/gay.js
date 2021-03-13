@@ -13,12 +13,15 @@ module.exports = {
         accessableby: "",
     },
     run: async (client, message, args) => {
+        try {
     let user = await message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
         let m = await message.channel.send("**Please Wait...**");
         let buffer = await AmeAPI.generate("gay", { url: user.user.displayAvatarURL({ format: "png", size: 1024 }) });
         let attachment = new Discord.MessageAttachment(buffer, "gay.png");
         m.delete({ timeout: 2000 });
         message.channel.send(attachment);
-
+catch (e) {
+			return message.channel.send('❎ An error occured, please try again!');
+		}
     }
 }
