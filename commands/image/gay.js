@@ -18,7 +18,11 @@ module.exports = {
         let buffer = await ameAPI.generate("gay", { url: user.user.displayAvatarURL({format: "gif", size: 2048 }) });
         let attachment = new Discord.MessageAttachment(buffer, "gay.gif");
         m.delete({ timeout: 1000 });
-        message.channel.send(attachment);
+        const embed = new Discord.MessageEmbed()
+        .setImage(attachment)
+        .setTimestamp()
+        .setColor(config.embedcolor);
+        message.channel.send(embed);
 
   }
 }
