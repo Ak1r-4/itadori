@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const config = require('../../configs/config.json');
 const emotes = require('../../configs/emotes.json')
 const AmeClient = require('amethyste-api');
-const AmeAPI = new AmeClient(config.ameAPI);
+const ameAPI = new AmeClient(config.ameAPI);
 module.exports = {
     config: {
         name: 'gay',
@@ -13,15 +13,12 @@ module.exports = {
         accessableby: "",
     },
     run: async (client, message, args) => {
-        try {
-    let user = await message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
+         let user = await message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.guild.members.cache.find(r => r.user.username.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.guild.members.cache.find(r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()) || message.member;
         let m = await message.channel.send("**Please Wait...**");
-        let buffer = await AmeAPI.generate("gay", { url: user.user.displayAvatarURL({ format: "png", size: 1024 }) });
-        let attachment = new Discord.MessageAttachment(buffer, "gay.png");
-        m.delete({ timeout: 2000 });
+        let buffer = await ameAPI.generate("gay", { url: user.user.displayAvatarURL({ format: "png", size: 2048 }) });
+        let attachment = new Discord.MessageAttachment(buffer, "fire.png");
+        m.delete({ timeout: 3000 });
         message.channel.send(attachment);
-catch (e) {
-			return message.channel.send('❎ An error occured, please try again!');
-		}
-    }
+
+  }
 }
