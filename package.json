@@ -1,6 +1,6 @@
 {
-  "name": "kakashi",
-  "version": "1.0.0",
+  "name": "itadori",
+  "version": "1.1.0",
   "description": "bot with discord",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,8 @@
     "discord-image-generation": "^1.4.7",
     "discord.js": "^12.5.1",
     "express": "^4.17.1",
+    "got": "^11.8.2",
+    "humanize": "0.0.9",
     "jimp": "^0.16.1",
     "mal-scraper": "^2.11.3",
     "moment": "^2.29.1",
