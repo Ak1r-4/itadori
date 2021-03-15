@@ -29,7 +29,7 @@ module.exports = {
     embed.addField(`**ChatBot**  ${emotes.chatbot} :`, '`chatbot`, `disableChatbotchannel`, `setChatbotchannel`', true)
     embed.addField(`**Fun**  ${emotes.fun} :`, '`binary`, `clyde`, `comment`, `eject`, `emojify`, `github`, `iq`, `npm`, `osu`, `reddit`, `weather`, `meme`, `8ball`', true)
     embed.addField(`**Anime**  ${emotes.anime} :`, '`anime` [this command for search about animes]', true)
-    embed.addField(`**Animals**  🐾 :`, '`bird`, `cat`, `dog`, `duck`, `fox`, `shibe`, `dogfact`, `catfact`', true)
+    embed.addField(`**Animals**  🐾 :`, '`bird`, `cat`, `dog`, `duck`, `fox`, `shibe`, `catfact`', true)
     embed.addField(`**info**  ${emotes.info} :`, '`help`, `botinfo`, `invite`, `ping`',true)
     embed.addField("**Server Support**", "**[Click Here](https://discordapp.com/invite/M4CUn7N6Tj)**", true)
     embed.addField("**Vote**", "**Soon !**", true)
